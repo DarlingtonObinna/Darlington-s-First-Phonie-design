@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="style.css"> 
+    <title> Contact</title>
+     </head>
+  <body>
+    
+    <div id="home" class="container">
+    <nav class="nav_container">
+      <div class="images">
+        <img src="sim.png" width="31.89px" height="31.89px"> 
+        <img src="phonie.png" width="96.07px" height="21.39px">
+      </div>
+      <div class="fa">
+     <div class="wrapper" onclick="myFunction(this)">
+  <div id="container2" class="container2">
+    <div class="menulogo"></div>
+      <div class="menulogo2"></div>
+    <div class="menulogo3"></div>
+  </div>
+</div>
+      
+      <ul id="nav_links" class="nav_links">
+        <li id="j"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#form-control">Contact</a></li>
+        <span>
+      <li><a id="h" href="alt2.html">Verify now</a></li>
+        </span>
+      </ul>
+          </div>
+    </nav>
+   
+    <div id="about" class="section">
+      <div class="write_ups">
+      <h2>Verify your Phone Number 
+  to enjoy our best services</h2>
+  <p>Get the best from your mobile service providers by verifying your mobile number. Phonie offers you optimum security for your mobile phone line.</p>
+  <button>Verify</button>
+  </div>
+  
+  <div class="ladys_image">
+    <img id="ladys_image" src="img_001 1.png" width="568px" height="650px">
+<img id="verify_image" src="Group 1.png" width="140px" height="250px"> 
+  </div>
+    </div>
+    </div>
+    
+    <!-- FOR THE MIDDLE CARDS -->
+    <div class="cards">
+      <h2 id="features">Features Overview</h2>
+    
+    <div class="middle_cards">
+      
+      <!-- Card 1.  -->
+      <div class="middle_card1">
+    <lottie-player class="lottiefiles" src="https://assets9.lottiefiles.com/packages/lf20_wmsbdykq.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player> 
+        <!--<img src="Phone-icon.png">-->
+        <h4>Easily Identify hidden caller IDs</h4>
+        <p>Phonie allows you view caller IDs even before picking the calls. This feature opens up the identity of any one that dials your nnumber, saving you from spam calls and false calls.</p>
+  
+  <h5>LEARN MORE</h5>
+      </div>
+      
+      <!-- Card 2.   -->
+      <div class="middle_card2">
+<lottie-player class="lottiefiles" src="https://assets7.lottiefiles.com/packages/lf20_96cnyxkh.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+        <!--<img src="security.png"> -->
+        <h4>Secure your SMS/MMS texts and files</h4>
+        <p>Phonie offers a premium security service that keeps your SMS and MMS files safe and secure. This feature ensures that any file or text sent to your SIM is secure and can be viewed on anny device that has the SIM Card.</p>
+        
+  <h5>LEARN MORE</h5>
+      </div>
+      
+      <!-- Card 3.   -->
+      <div class="middle_card3">
+   <lottie-player class="lottiefiles" src="https://assets9.lottiefiles.com/private_files/lf30_hxmzmij0.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay></lottie-player>
+      <!--  <img src="jumping-lottie.png"> -->
+        <h4>Exciting call/date deals</h4>
+        <p>With Phonie, you  get you enjoy fantastic deals on call/data rates. We offer you premium and mouth-watering deals to keep you connected with friennds and famiily.</p>
+       
+  <h5>LEARN MORE</h5>
+      </div>
+    </div>
+    </div>
+    
+    <section>
+      <div id="form-control" class="form-control">
+      <h2>Subscribe to our newsletter</h2>
+      <p>Let us communicate with you from time to time, sharing the new updates on our product features and offerings.</p>
+      <div class="email">
+      <input type="email" placeholder="Enter your email address">
+      <button class="button">Subscribe</button>
+
+      </div>
+      </div>
+    </section>
+    
+    <footer>
+      <h4>© 2022. AltSchool Circle-74, All Rights Reserved.</h4>
+    </footer>
+    
+    <script>
+     var logo= document.querySelector(".container2");
+   var menu= document.querySelector(".nav_links")
+
+  logo.addEventListener("click", function() {
+     menu.classList.toggle("showmenu");
+   });
+  
+  
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+$(document).ready(function(){
+  $(".container2").click(function(){
+    $("#nav_links").toggle(700);
+  });
+});
+
+  </script>
+  </body>
+</html>
