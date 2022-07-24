@@ -186,7 +186,7 @@ button{
 }
 
 .middle_card2 h4{
-  width: 195px;
+  width: 203px;
   height: 48px;
 }
 
@@ -203,9 +203,7 @@ button{
   height: 75px;
   line-height: 25px;
   text-align: center;
- /* For chrome  
-  margin-top: 25px; */
-  margin-top: 1em;
+  margin-top: 25px;
   font-weight: 400;
   opacity: 0.65;
 }
