@@ -149,7 +149,7 @@ button{
 .middle_card2,
 .middle_card3{
   width: 260px;
-  height: 500px;
+  height: 600px;
   line-height: 14px;
   text-align: center;
   border: 1px solid rgba(86,172, 224, 0.5);
@@ -186,7 +186,7 @@ button{
 }
 
 .middle_card2 h4{
-  width: 203px;
+  width: 210px;
   height: 48px;
 }
 
@@ -203,7 +203,7 @@ button{
   height: 75px;
   line-height: 25px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 35px;
   font-weight: 400;
   opacity: 0.65;
 }
@@ -211,8 +211,7 @@ button{
 .middle_card1 h5, 
 .middle_card2 h5,
 .middle_card3 h5{
-/* margin-top: 10em;*/
- margin-top: 160px;
+ margin-top: 10em;
   width: 100px;
   height: 18px;
   text-align: center;
