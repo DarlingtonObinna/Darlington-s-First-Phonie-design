@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Contact</title>
+    
+    <style>
+      
+   @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Lexend+Deca&family=Montserrat&family=Poppins:wght@200;400&display=swap');
+    
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body{
+        max-width: 100%;
+        height: 100px;
+      }
+      
+     .container{
+       background-image: radial-gradient(50% 50% at 50% 50%, rgba(86, 172, 224, 0) 0%, rgba(86, 172, 224, 0.21) 100%);
+     }
+      
+    .nav_container{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border: 1px;
+    }
+    
+    
+   .nav_links{
+     display: flex;
+     padding: 10px;
+     border: 1px;
+     margin-top: 1em;
+   }
+   
+  .nav_links li{
+    margin-right: 15px;
+    list-style: none;
+  }
+  
+   .nav_links li a{
+     text-decoration: none;
+     color: #4E4E4E;
+     font-size: 16px;
+     font-family: 'Poppins';
+     font-weight: 600;
+   }
+   
+  .images{
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+   
+  span{
+    background-image: linear-gradient(270deg, #D8A000 0%, #FFC10D 100%);
+    width: 139px;
+    text-align: center;
+    height: 28px;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    padding: 5px;
+    position: relative;
+    bottom:.3em;
+  }
+  
+  #h{
+    color: #FFFFFF;
+  }
+  
+.section{
+  display: flex;
+}
+    </style>
+  </head>
+  <body>
+   
+   
+    <div class="container">
+    <nav class="nav_container">
+      <div class="images">
+        <img src="sim.png" width="31.89px" height="31.89px"> 
+        <img src="phonie.png" width="96.06px" height="21.39px">
+      </div>
+      
+      <ul class="nav_links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+        <span>
+      <li><a id="h" href="#">Verify now</a></li>
+        </span>
+      </ul>
+    </nav>
+    
+    <div class="section">
+      <div class="ladys_image">
+        <img src="shutterstock.png" width="597px">
+      </div>
+      
+      <div class="writeups">
+        <h2>Let’s get your mobile number verified. </h2>
+        <p>Carefully fill the form below to allow us track your mobile carrier service and commence your verificationn process.</p>
+     
+      
+      <div class="form-control">
+        <label for="firstname">First Name</label>
+        <br>
+        <input type="text" name="firstname"  placeholder="Enter your first name"><br>
+        
+        <label for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" placeholder="Enter your first name"> <br>
+        
+        <label for="phonenumber">Phone Number</label><br>
+        <input placeholder="Enter your phone number (+23480**, 08*** )" type="number" name="phonenumber"><br>
+        
+        <button>Verify Phone Number</button>
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
