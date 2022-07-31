@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Contact</title>
+      <link rel="stylesheet" href="stylee.css"> 
+  </head>
+  <body>
+   
+   
+    <div class="container">
+    <nav class="nav_container">
+      <div class="images">
+        <img src="sim.png" width="31.89px" height="31.89px"> 
+        <img src="phonie.png" width="96.06px" height="21.39px">
+      </div>
+      
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+        <span>
+      <li><a id="h" href="#">Verify now</a></li>
+        </span>
+      </ul>
+    </nav>
+    
+    <div class="section">
+      <div class="ladys_image">
+        <img id="ladys_image" src="shutterstock.png" width="470px" height="800px">
+      </div>
+      
+      <div class="writeups">
+        <h2>Let’s get your mobile number verified. </h2>
+        <p>Carefully fill the form below to allow us track your mobile carrier service and commence your verification process.</p>
+     <div class="form-control">
+        <label id="txt" class="label" for="firstname">First Name</label>
+        <br>
+        <input type="text" name="firstname"  placeholder="Enter your first name"><br>
+        
+        <label id="txt" class="label" for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" placeholder="Enter your first name"> <br>
+        
+        <div class="phonenumberverfier">
+        <label class="label" for="phonenumber">Phone Number</label><br>
+        <input placeholder="Enter your phone number (+23480**, 08*** )" id="number" type="tel" name="phonenumber">
+        <h6 class="carrier-icon">
+         
+        </h6>
+        </div>
+        </div>
+        <br>
+        <br>
+        <button class="button">Verify Phone Number</button>
+    </div>
+    </div>
+    </div>
+    
+    
+    <script>
+    
+    let numbers= document.getElementById("number");
+        let text= document.getElementById("text");
+        let carrierIcon= document.querySelector(".carrier-icon");
+      
+      let mtnNumbers= ["0803","0903","0703","0806", "0706","0906","0810","0813","0814", "0816",];
+    let gloNumbers= ["0805","0905","0705","0807","0811","0815",];
+    let airtelNumbers= ["0802","0902","0808","0708","0907","0812","0701","0901","0704","0904",];
+    let nineMobileNumbers= ["0908","0909", "0809","0818", "0817",];
+    let vodafoneNumbers= ["0704","0702",];
+    
+    
+    function displayCarrier(network){
+       if(network === "MTN"){
+         carrierIcon.innerHTML= '<img src="MTN-logo.png" alt="" width="35px" height="35px" style=" border-radius: 0.5em">'
+         numbers.style.borderBottom= "5px solid #ffd100";
+         numbers.style.marginLeft= "3em";
+         numbers.style.position= "relative";
+         numbers.style.bottom= "1em";
+         
+       }
+       else if(network === "GLO"){
+         carrierIcon.innerHTML= '<img src="Glo_button.png" alt="" width="35px" height="35px">'
+         numbers.style.borderBottom= "5px solid limegreen";
+         numbers.style.marginLeft= "3em";
+         numbers.style.position= "relative";
+         numbers.style.bottom= "1em";
+       }
+       else if(network === "airtel"){
+        carrierIcon.innerHTML= '<img src="airtel-logo.png" alt="" width="35px" height="35px" style=" border-radius: 0.5em">';
+        numbers.style.borderBottom= "5px solid rgb(207,0,0)";
+         numbers.style.marginLeft= "3em";
+         numbers.style.position= "relative";
+         numbers.style.bottom= "1em";
+       }
+       else if(network === "nineMobile"){
+         carrierIcon.innerHTML= '<img src="Mobile-9.png" alt="" width="35px" height="35px">'
+         numbers.style.borderBottom= "5px solid darkgreen";
+         numbers.style.marginLeft= "3em";
+         numbers.style.position= "relative";
+         numbers.style.bottom= "1em";
+       }
+       else if(network === "vodafone"){
+        carrierIcon.innerHTML= '<img src="vodafone-logo.png" alt="" width="35px" height="35px" style=" border-radius: 0.5em">'
+       }
+     }
+     
+   //  displayCarrier("MTN")
+     
+         function resetDisplay(){
+      carrierIcon.innerHTML=""
+      numbers.style.borderBottom= "1px solid rgba(86,172, 224, 0.35)";
+      numbers.style.marginLeft= "0";
+      numbers.style.bottom= "0";
+    }
+    // displayCarrier("GLO")
+    function checkNetworkCarrier(number){
+      if(mtnNumbers.includes(number)){
+        displayCarrier("MTN");
+    }
+    else if(gloNumbers.includes(number)){
+      displayCarrier("GLO");
+    }
+    else if(airtelNumbers.includes(number)){
+     displayCarrier("airtel");
+    }
+    else if(nineMobileNumbers.includes(number)){
+     displayCarrier("nineMobile"); 
+    }
+    }
+    
+    numbers.addEventListener("input", function(){
+      let phoneInputValue= numbers.value;
+      let phoneNumbers= phoneInputValue.slice(0,4);
+      
+      if(phoneInputValue.length >= 11){
+      checkNetworkCarrier(phoneNumbers)
+    }
+    else{
+      resetDisplay()
+    }
+    })
+    
+    </script>
+  </body>
+</html>
